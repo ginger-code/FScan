@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FScan", "FScan\FScan.fsproj", "{B3491996-4E29-4778-BE31-B95EAFFA2A70}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FScanTests", "FScanTests\FScanTests.fsproj", "{533878E0-516E-4466-99C8-6E6D4EE400F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3491996-4E29-4778-BE31-B95EAFFA2A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3491996-4E29-4778-BE31-B95EAFFA2A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3491996-4E29-4778-BE31-B95EAFFA2A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3491996-4E29-4778-BE31-B95EAFFA2A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533878E0-516E-4466-99C8-6E6D4EE400F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533878E0-516E-4466-99C8-6E6D4EE400F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533878E0-516E-4466-99C8-6E6D4EE400F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533878E0-516E-4466-99C8-6E6D4EE400F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

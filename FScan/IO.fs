@@ -5,7 +5,6 @@ open FsToolkit.ErrorHandling
 open FScan.Result
 
 type FilePath =
-    private
     | File of File
     | Directory of Directory
     static member Bind(path: string) : FilePath =

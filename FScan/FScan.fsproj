@@ -6,7 +6,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="Result.fs" />
         <Compile Include="IO.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FsToolkit.ErrorHandling" Version="3.0.0-beta002" />
+      <PackageReference Update="FSharp.Core" Version="6.0.3" />
     </ItemGroup>
 
 </Project>

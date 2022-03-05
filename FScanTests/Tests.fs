@@ -29,19 +29,34 @@ let tests =
               Expect.equal rootPath.Path "Root" "Root directory path was incorrect"
               let subdirectories = rootPath.GetSubdirectories()
 
+              let subdirectories =
+                  match subdirectories with
+                  | Ok subdirectories -> subdirectories
+                  | _ -> failtest "GetSubdirectories failed"
+
               Expect.hasLength
                   subdirectories
                   1
                   "There should be exactly one subdirectory in the result set"
 
-              let allSubdirectories = rootPath.GetSubdirectoriesRecursive()
+              let allSubdirectories = rootPath.GetAllSubdirectories()
+
+              let allSubdirectories =
+                  match allSubdirectories with
+                  | Ok allSubdirectories -> allSubdirectories
+                  | _ -> failtest "GetAllSubdirectories failed"
 
               Expect.hasLength
                   allSubdirectories
                   2
                   "There should be exactly two subdirectories in the result set"
 
-              let allChildren = rootPath.GetChildrenRecursive()
+              let allChildren = rootPath.GetAllChildren()
+
+              let allChildren =
+                  match allChildren with
+                  | Ok allChildren -> allChildren
+                  | _ -> failtest "GetAllChildren failed"
 
               Expect.hasLength
                   allChildren
